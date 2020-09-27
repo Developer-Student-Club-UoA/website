@@ -14,7 +14,7 @@ const Location = () => {
     }
   `)
 
-  return (
+  return src === '' ? null : (
     <section id="location" className="section-spacer">
       <Container>
         <header className="text-center">
@@ -30,6 +30,7 @@ const Location = () => {
             style={{ border: 0 }}
             allowfullscreen=""
             aria-hidden="false"
+            title="location"
             tabindex="0"
           ></iframe>
         </div>

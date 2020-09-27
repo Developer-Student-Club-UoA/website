@@ -42,7 +42,7 @@ const Footer = () => {
             <div className="footer-widget first-of-footer-widget">
               <img src={logo} alt="dsc logo" className="logo-sm mb-10" />
               <p>&copy; {new Date().getFullYear()} | All Rights Reserved.</p>
-              {mail == null ? null : (
+              {mail === '' ? null : (
                 <>
                   <span>Feel free to drop us an email at </span>
                   <a href={`mailto:${mail}`}> {mail} </a>{' '}
@@ -51,8 +51,8 @@ const Footer = () => {
               <ul className="social-list__inline mt-10">
                 {Object.entries(social)
                   .filter(([, link]) => link != null)
-                  .map(([name, link], i) => (
-                    <li key={i}>
+                  .map(([name, link]) => (
+                    <li key={name}>
                       <a href={link} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={icons[name]} />
                       </a>
@@ -64,8 +64,8 @@ const Footer = () => {
 
           <Col md={8} xs={10}>
             <Row>
-              {widgets.map(widget => (
-                <FooterWidget {...widget} />
+              {widgets.map((widget, i) => (
+                <FooterWidget {...widget} key={i} />
               ))}
             </Row>
           </Col>

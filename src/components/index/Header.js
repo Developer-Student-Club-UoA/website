@@ -8,7 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
-  const { websiteYaml: calendar, university } = useStaticQuery(graphql`
+  const {
+    websiteYaml: { calendar, university },
+  } = useStaticQuery(graphql`
     {
       websiteYaml {
         calendar
@@ -44,8 +46,7 @@ const Header = () => {
                   </p>
                 </div>
               </div>
-
-              {calendar == null || calendar === '' ? null : (
+              {calendar === '' ? null : (
                 <a className="hero-button" href={calendar}>
                   <FontAwesomeIcon icon={faCalendar} className="mr-2" />
                   Add to calendar
