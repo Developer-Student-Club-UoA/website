@@ -1,12 +1,10 @@
-# Google Developer Student Club Website Template
+# Google Developer Student Club - University of Auckland Website
 
 <img src="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-built_white.svg" width="90"> <img src="https://github.com/favicon.ico" width="40">
 
 The commitment of this repository is to allow all the Developer Student Clubs to **generate a site** for their club in **less than 3 minutes**, performing a few simple steps.<br> <br>
 **The management of this site does not require any kind of web development and backend competence.**
 
-## Demo
-You can see the [demo here](https://andreabac3.github.io/dsc-website-template/)
 ## How can I change the content of the site without knowing web languages?
 
 To change the content of the site, go to the `content` folder located in the root of the project. In this folder there are several .yaml files in which you can modify the contents. 
@@ -17,14 +15,11 @@ To install you first need [node.js](https://nodejs.org/en/) on your machine.
 You need to perform the following steps only the first time.
 ```bash
 # Clone the repo
-git clone https://github.com/andreabac3/dsc-website-template.git
-cd dsc-website-template/
+git clone https://github.com/Developer-Student-Club-UoA/website/
+cd website
 
-# Install the gatbsy CLI
-npm i -g gatsby-cli
-
-# Install local dependencies
-npm install
+# Install dependencies
+yarn
 
 # Run on localhost:8000 (by default)
 # and edit the /content folder
@@ -33,59 +28,9 @@ npm run develop
 
 **that's it!**
 
-# Deploy
-## Deploy on Firebase Hosting 🔥
-
-We suggest to read the [Firebase Hosting guide reference from Gatsby website](https://www.gatsbyjs.org/docs/deploying-to-firebase/)
-
-Make sure you have:
-
-- a Firebase Account
-- created a Firebase Project
-<details><summary>Click here to read more about Firebase Deploy</summary>
-<p>
-
-> You can skip the first two points of the guide if you have already installed and configured the following dependencies.
-
-<br>
-
-1. Install the Firebase CLI with npm by running the following command and sign into firebase account:
-
-```sh
-npm install -g firebase-tools
-```
-
-2. Sign into Firebase using your Google account by running the following command:
-
-```sh
-firebase login
-```
-
-3. Navigate into the root of the project and running the following command:
-
-```sh
-firebase init
-```
-
-then select **Firebase Hosting** and the firebase project you wish to use or creat a new one if you haven't done it previously.
-
-These first three steps are needed only once during the first configuration. After that, only step 4 is needed to deploy on Firebase.
-
-4. Finally we can deploy our website
-
-```sh
-npm run deployFirebase
-```
-
-All done! Once the deployment concludes, you can access your website using `firebaseProjectId.firebaseapp.com` or `firebaseProjectId.web.app`.
-
-N.B: of course replace the keyword <firebaseProjectId> with the name of your project.
-
-</p>
-</details>
-
 ## Deploy on Github Pages
-```sh
+
+```bash
 npm run deploy
 ```
 
@@ -150,11 +95,6 @@ social {
 </p>
 </details>
 
-# Authors
+## Recognition
 
-- **Andrea Bacciu** (**DSC LEAD** - Software Engineer) [Github profile](https://github.com/andreabac3)
-- **Alessandro Scandone** (**Core Team** - Frontend developer) - [Github profile](https://github.com/ascandone)
-
-
-### Special thanks to the EKSU DSC teams:
-This is a refactor of the [EKSU DSC](https://github.com/DSCEksu/dsceksu-laravel) website as a [gatsby](https://www.gatsbyjs.org/) template.
+Thanks to the unoffical Google DSC organisation for creating the [dsc-website-template](https://github.com/google-developer-student-club/dsc-website-template).
