@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/dsc-website-template',
+  pathPrefix: '/',
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
@@ -31,5 +31,9 @@ module.exports = {
     //     icon: `src/images/dsc-logo.png`, // This path is relative to the root of the site.
     //   },
     // },
+    `gatsby-plugin-cname`
   ],
+  siteMetadata: {
+    siteUrl: `https://dscuoa.nz/`
+  },
 }
