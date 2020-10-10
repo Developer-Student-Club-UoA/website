@@ -37,12 +37,7 @@ const Header = () => {
                     <second-letter>o</second-letter>
                     <first-letter>g</first-letter>
                     <forth-letter>l</forth-letter>
-                    <third-letter>e</third-letter> Developers program for
-                    university students to learn
-                    <second-letter> mobile </second-letter> and{' '}
-                    <first-letter>web development skills</first-letter>,{' '}
-                    <third-letter>design thinking skills</third-letter> and{' '}
-                    <forth-letter>leadership skills.</forth-letter>
+                    <third-letter>e</third-letter> Developers program for university students to learn mobile and web development skills, design thinking skills, and leadership skills.
                   </p>
                 </div>
               </div>
