@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import Footer from './Footer'
-import Seo from './Seo'
+import Seo from './seo'
 import { useStaticQuery, graphql } from 'gatsby'
 import './Layout.scss'
 
