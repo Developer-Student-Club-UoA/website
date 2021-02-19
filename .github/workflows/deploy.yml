@@ -1,0 +1,28 @@
+name: Deploy
+
+on:
+  # Triggers the workflow on push events for the master branch
+  push:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install NPM Dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build --prefix-paths --verbose
+        
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
