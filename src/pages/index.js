@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import Header from '../components/index/Header'
 import Overviews from '../components/index/Overviews'
 import Opportunities from '../components/index/Opportunities'
