@@ -14,7 +14,27 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
 
+      - name: Yarn Cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            yarn-
+            
+      - name: Gatsby Cache
+        uses: actions/cache@v2
+        with:
+          path: ./.cache
+          key: gatsby-${{ github.run_id }}
+          restore-keys: |
+            gatsby-
+      
       - name: Install Yarn Dependencies
         run: yarn install
 
