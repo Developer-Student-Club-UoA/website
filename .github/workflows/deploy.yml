@@ -15,13 +15,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install NPM Dependencies
+      - name: Install Yarn Dependencies
         run: yarn install
 
       - name: Build
         run: yarn build --prefix-paths --verbose
         
-      - name: GitHub Pages action
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
