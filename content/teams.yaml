@@ -1,33 +1,91 @@
-- name: John Doe
-  role: Mentor
-  img: images/teams/avatar.png
+- name: Aiden Burgess
+  role: DSC Lead
+  img: images/teams/aiden-burgess.jpg
   descs:
-    - Mobile and Web developer
-    - Open source enthusiast
-    - Community mentor
+    - KFC Eater
+    - Anime Lover
+    - Booo Java
   social:
-    twitter: https://www.example.com
-    github: https://www.example.com
-    linkedin: https://www.example.com
+    github: https://github.com/AidenBurgess
+    linkedin: https://www.linkedin.com/in/aidenburgess/
 
-- name: John Doe 2
-  role: Mentor
+- name: Flynn Fromont
+  role: Vice-Lead
   img: images/teams/avatar.png
-  descs:
-    - Mobile and Web developer
-    - Open source enthusiast
-    - Community mentor
+  descs: []
   social:
-    twitter: https://www.example.com
-    github: https://www.example.com
+    linkedin: https://www.linkedin.com/in/flynn-fromont-6631351b1/
 
-- name: John Doe 3
-  role: Mentor
+- name: David Xiao
+  role: Secretary
+  img: images/teams/david-xiao.jpg
+  descs:
+    - Video Gamer
+  social:
+    github: https://github.com/david-xia0
+    linkedin: https://www.linkedin.com/in/david-xiao-081854190/
+
+- name: Matt Moran
+  role: Treasurer
   img: images/teams/avatar.png
   descs:
-    - Mobile and Web developer
-    - Open source enthusiast
-    - Community mentor
+    - Web / Node dev
+    - TypeScript fixes everything
+    - Glider pilot 🛩️
+
+- name: Hiruna Jayamanne
+  role: Tech Lead
+  img: images/teams/hiruna-jayamanne.jpg
+  descs:
+    - Backend developer
+    - Open source & Linux enthusiast
+    - Rust lover
   social:
-    github: https://www.example.com
-    linkedin: https://www.example.com
+    github: https://github.com/HiruNya
+    linkedin: https://www.linkedin.com/in/hirunaj/
+
+- name: Beverley Sun
+  role: Marketing Lead
+  img: images/teams/beverly-sun.jpg
+  descs:
+    - Software Engineering Student
+    - Aspiring Web Developer
+    - Runner
+  social:
+    github: https://github.com/beverleysun
+    linkedin: https://www.linkedin.com/in/beverley-sun/
+
+- name: Jo Bull
+  role: Tech Team
+  img: images/teams/jo-bull.png
+  descs:
+    - Web / Node Developer
+    - Rust
+    - Inventor / AutoCAD
+  social:
+    discord: Jo#5555
+    linkedin: https://www.linkedin.com/in/josiah-bull-7a7131205/
+
+- name: Peter Goedeke
+  role: Tech Team
+  img: images/teams/avatar.png
+  descs:
+    - Backend Developer
+    - Haskell Enthusiast
+
+- name: Dong-Mei Lim
+  role: Marketing Team
+  img: images/teams/dong-mei.png
+  descs:
+    - Software Engineering Student
+
+- name: Rafaela Cosma
+  role: Marketing Team | Sponsorships
+  img: images/teams/rafaela-cosma.jpg
+  descs:
+    - CompSci Student
+    - Carer of the best dog ever
+    - Global Politics nerd
+  social:
+    linkedin: https://www.linkedin.com/in/rafaela-cosma/
+
