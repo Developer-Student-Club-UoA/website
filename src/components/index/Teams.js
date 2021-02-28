@@ -22,9 +22,9 @@ const Teams = _ => {
             }
           }
           social {
-            twitter
             github
             linkedin
+            discord
           }
         }
       }

@@ -26,7 +26,7 @@ const Team = ({ name, role, descs, img, social }) => (
         </div>
         <div className="bottom">
           <ul className="social-list__inline mt-10">
-            {Object.entries(social)
+            {social && Object.entries(social)
               .filter(([, link]) => link != null)
               .map(([name, link]) => (
                 <li key={name}>

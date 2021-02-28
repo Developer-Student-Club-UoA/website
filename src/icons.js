@@ -4,4 +4,5 @@ export {
   faGithub as github,
   faYoutube as youtube,
   faLinkedin as linkedin,
+  faDiscord as discord,
 } from '@fortawesome/free-brands-svg-icons'
