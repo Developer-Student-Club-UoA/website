@@ -20,7 +20,6 @@ const Layout = ({ children }) => {
         social {
           youtube
           github
-          twitter
         }
       }
     }

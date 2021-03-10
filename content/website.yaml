@@ -2,10 +2,11 @@
   description: 'Developer Student Clubs (DSC) is a Google Developers program for university students to acquire technical skills and solve problems' # meta description
   university: 'University of Auckland'
   lang: 'en'
-  register: '' # optional
+  register: 'https://go.dscuoa.nz/signup' # optional
   calendar: '' # optional
-  mail: '' # optional
+  mail: 'hello@dscuoa.nz' # optional
   social:
-    youtube: 'https://youtube.com'
-    github: 'https://github.com/Developer-Student-Club-UoA/'
-    twitter: 'https://twitter.com'
+    discord: 'https://go.dscuoa.nz/discord'
+    facebook: 'https://go.dscuoa.nz/facebook'
+    github: 'https://go.dscuoa.nz/github'
+    youtube: 'https://go.dscuoa.nz/youtube'
