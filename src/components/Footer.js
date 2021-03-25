@@ -28,7 +28,8 @@ const Footer = () => {
         social {
           youtube
           github
-          twitter
+          facebook
+          discord
         }
       }
     }

@@ -5,4 +5,5 @@ export {
   faYoutube as youtube,
   faLinkedin as linkedin,
   faDiscord as discord,
+  faFacebook as facebook,
 } from '@fortawesome/free-brands-svg-icons'
