@@ -9,7 +9,7 @@ const Faqs = () => {
     websiteYaml: { mail },
     faqsYaml: {
       header,
-      faqs: [faq1, faq2, faq3, faq4],
+      faqs,
     },
   } = useStaticQuery(graphql`
     {
@@ -32,14 +32,16 @@ const Faqs = () => {
         <header className="section-header text-center">
           <h2 className="section-title">{header}</h2>
         </header>
-        <Row className="row">
-          <Faq {...faq1} />
-          <Faq {...faq2} />
-        </Row>
-        <Row>
-          <Faq {...faq3} />
-          <Faq {...faq4} />
-        </Row>
+        {
+          Array(Math.ceil(faqs.length / 2))
+            .fill(0)
+            .map((_, i) =>
+              <Row className="row">
+                <Faq {...faqs[i * 2]} />
+                { ((i*2)+1 < faqs.length) && <Faq {...faqs[(i * 2) + 1]} /> }
+              </Row>
+            )
+        }
       </Container>
       {mail === '' ? null : (
         <div className="mt-40 text-center">
