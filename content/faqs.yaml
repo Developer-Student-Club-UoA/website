@@ -6,12 +6,15 @@
     - header: Can I join if I have no experience?
       body: |
         Absolutely, we welcome everyone from any level of experience and from any discipline!
-        Most of our talks and workshops are from scratch so lack of experience is definitely not a problem.
+        Most of our talks and workshops are designed for beginners so lack of experience is definitely not a problem.
 
     - header: Is it free to sign up?
       body: |
         All our events are 100% free and it's free to join!
         BTW they all have FREE PIZZA 🍕!!
+
+    - header: Who can become a member?
+      body: The clubs is open to any student, ranging from novice developers who are just starting, to advanced developers who want to further their skills.
 
     - header: How is it different to other tech clubs?
       body: |
@@ -26,7 +29,7 @@
 
     - header: How much commitment is required?
       body: |
-        None! Feel free to come to any of events but attendance is definitely not required or expected at all!
+        None! Feel free to come to any of events but attendance is completely optional.
 
     - header: Who should I reach out to if I have any questions?
       body: If you have any questions or comments, please don't hesitate to contact us by emailing hello@dscuoa.nz or posting your question in our Discord server.
